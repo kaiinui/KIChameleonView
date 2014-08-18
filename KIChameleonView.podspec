@@ -9,4 +9,8 @@ Pod::Spec.new do |s|
   s.source_files  = "ChameleonView/Classes/**/*.{h,m}"
   s.requires_arc = true
   s.platform = "ios", '7.0'
+  s.dependency "SDWebImage", 
+  s.dependency "SDWebImage/WebP"
+  s.dependency "VKVideoPlayer"
+  s.dependency "FLAnimatedImage"
 end
