@@ -54,7 +54,10 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
 }
 
 - (void)setAnimationGIFViewWithURL:(NSURL *)URL {
-    // [TODO]
+    FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:[NSData dataWithContentsOfURL:URL]];
+    FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] initWithFrame:self.frame];
+    [self addSubview:imageView];
+    imageView.animatedImage = image;
 }
 
 - (void)setVideoPlayerViewWithURL:(NSURL *)URL {
