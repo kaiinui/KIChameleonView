@@ -3,6 +3,7 @@
 #import <VKVideoPlayer.h>
 #import <FLAnimatedImage.h>
 #import <FLAnimatedImageView.h>
+#import <UIImage+WebP.h>
 
 @interface KIChameleonView ()
 
@@ -13,7 +14,8 @@
 typedef NS_ENUM(NSInteger, KIChameleonViewType) {
     KIChameleonViewTypeImage,
     KIChameleonViewTypeAniGif,
-    KIChameleonViewTypeVideo
+    KIChameleonViewTypeVideo,
+    KIChameleonViewTypeWebP
 };
 
 - (id)initWithFrame:(CGRect)frame
@@ -35,6 +37,9 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
             break;
         case KIChameleonViewTypeVideo:
             [self setVideoPlayerViewWithURL:URL];
+            break;
+        case KIChameleonViewTypeWebP:
+            [self setWebPImageViewWithURL:URL];
             break;
         default:
             NSLog(@"DEFAULT");
@@ -66,6 +71,13 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
     [self addSubview:playerView];
 }
 
+- (void)setWebPImageViewWithURL:(NSURL *)URL {
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+    [self addSubview:imageView];
+    NSData *data = [NSData dataWithContentsOfURL:URL];
+    [imageView setImage:[UIImage sd_imageWithWebPData:data]];
+}
+
 - (KIChameleonViewType)typeForURL:(NSURL *)URL {
     NSString *extension = [[URL path] pathExtension];
     return [self typeForExtension:extension];
@@ -82,7 +94,7 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
              @"jpeg": @(KIChameleonViewTypeImage),
              @"bmp": @(KIChameleonViewTypeImage),
              @"png": @(KIChameleonViewTypeImage),
-             @"webp": @(KIChameleonViewTypeImage),
+             @"webp": @(KIChameleonViewTypeWebP),
              @"m3u8": @(KIChameleonViewTypeVideo)
              };
 }
