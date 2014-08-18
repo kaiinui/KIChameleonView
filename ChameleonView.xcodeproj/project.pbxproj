@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		745C981CFC03435086139E74 /* libPods-ChameleonView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EC4D025DB246A38F75847C /* libPods-ChameleonView.a */; };
 		D4DFFAE419A241BC009EFFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFAE319A241BC009EFFC4 /* Foundation.framework */; };
 		D4DFFAE619A241BC009EFFC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFAE519A241BC009EFFC4 /* CoreGraphics.framework */; };
 		D4DFFAE819A241BC009EFFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFAE719A241BC009EFFC4 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35EC4D025DB246A38F75847C /* libPods-ChameleonView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChameleonView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0D737E91104081AA635983 /* Pods-ChameleonView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChameleonView.xcconfig"; path = "Pods/Pods-ChameleonView.xcconfig"; sourceTree = "<group>"; };
 		D4DFFAE019A241BC009EFFC4 /* ChameleonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChameleonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DFFAE319A241BC009EFFC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4DFFAE519A241BC009EFFC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +66,7 @@
 				D4DFFAE619A241BC009EFFC4 /* CoreGraphics.framework in Frameworks */,
 				D4DFFAE819A241BC009EFFC4 /* UIKit.framework in Frameworks */,
 				D4DFFAE419A241BC009EFFC4 /* Foundation.framework in Frameworks */,
+				745C981CFC03435086139E74 /* libPods-ChameleonView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +86,12 @@
 		D4DFFAD719A241BB009EFFC4 = {
 			isa = PBXGroup;
 			children = (
+				D4DFFB1819A2427E009EFFC4 /* Classes */,
 				D4DFFAE919A241BC009EFFC4 /* ChameleonView */,
 				D4DFFB0819A241BC009EFFC4 /* ChameleonViewTests */,
 				D4DFFAE219A241BC009EFFC4 /* Frameworks */,
 				D4DFFAE119A241BC009EFFC4 /* Products */,
+				AB0D737E91104081AA635983 /* Pods-ChameleonView.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +111,7 @@
 				D4DFFAE519A241BC009EFFC4 /* CoreGraphics.framework */,
 				D4DFFAE719A241BC009EFFC4 /* UIKit.framework */,
 				D4DFFB0219A241BC009EFFC4 /* XCTest.framework */,
+				35EC4D025DB246A38F75847C /* libPods-ChameleonView.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,6 +159,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D4DFFB1819A2427E009EFFC4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4DFFB1219A241BC009EFFC4 /* Build configuration list for PBXNativeTarget "ChameleonView" */;
 			buildPhases = (
+				11E156E8636E4919BBA75544 /* Check Pods Manifest.lock */,
 				D4DFFADC19A241BC009EFFC4 /* Sources */,
 				D4DFFADD19A241BC009EFFC4 /* Frameworks */,
 				D4DFFADE19A241BC009EFFC4 /* Resources */,
+				B4804C084A2D4A0DB9BAE60A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +260,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11E156E8636E4919BBA75544 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B4804C084A2D4A0DB9BAE60A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ChameleonView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4DFFADC19A241BC009EFFC4 /* Sources */ = {
@@ -374,6 +423,7 @@
 		};
 		D4DFFB1319A241BC009EFFC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB0D737E91104081AA635983 /* Pods-ChameleonView.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +437,7 @@
 		};
 		D4DFFB1419A241BC009EFFC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB0D737E91104081AA635983 /* Pods-ChameleonView.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +508,7 @@
 				D4DFFB1419A241BC009EFFC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4DFFB1519A241BC009EFFC4 /* Build configuration list for PBXNativeTarget "ChameleonViewTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +517,7 @@
 				D4DFFB1719A241BC009EFFC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

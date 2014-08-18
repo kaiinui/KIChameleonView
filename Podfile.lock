@@ -1,0 +1,51 @@
+PODS:
+  - CocoaLumberjack (1.7.0):
+    - CocoaLumberjack/Core
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.7.0)
+  - CocoaLumberjack/Extensions (1.7.0):
+    - CocoaLumberjack/Core
+  - DTCoreText (1.6.13):
+    - DTFoundation/Core (~> 1.7.1)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.1)
+    - DTFoundation/DTHTMLParser (~> 1.7.1)
+    - DTFoundation/UIKit (~> 1.7.1)
+  - DTFoundation/Core (1.7.2)
+  - DTFoundation/DTAnimatedGIF (1.7.2)
+  - DTFoundation/DTHTMLParser (1.7.2):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.2):
+    - DTFoundation/Core
+  - FLAnimatedImage (1.0.1)
+  - FXImageView (1.3.3)
+  - Reachability (3.1.1)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.1)
+  - VKFoundation (0.1.1):
+    - CocoaLumberjack (~> 1.7.0)
+    - DTCoreText (~> 1.6.11)
+    - FXImageView (~> 1.3.3)
+    - Reachability (~> 3.1.1)
+  - VKVideoPlayer (0.1.4):
+    - CocoaLumberjack (~> 1.7.0)
+    - DTCoreText (~> 1.6.11)
+    - VKFoundation (= 0.1.1)
+
+DEPENDENCIES:
+  - FLAnimatedImage
+  - SDWebImage
+  - VKVideoPlayer
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 744856111d9431252611e696ea460ffe36fdc5ae
+  DTCoreText: 84eb8ba2e70448fdd9d837540e371f9f587b65ba
+  DTFoundation: 126729614911ae7dbab3dcc1c078f189943bee66
+  FLAnimatedImage: a91333b191d57ecf7f86b85bf93145a7f63dafe5
+  FXImageView: 0f3496c1be409a450a424f2c06b448fd27cbb9cc
+  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
+  VKFoundation: 39b420ace3adc7aedcd98f84b71500ced0f6f5e1
+  VKVideoPlayer: 87e52d0d4b3045fc1b9714135e83233bb86479bb
+
+COCOAPODS: 0.33.1
