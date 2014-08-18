@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4DFFAE419A241BC009EFFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFAE319A241BC009EFFC4 /* Foundation.framework */; };
+		D4DFFAE619A241BC009EFFC4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFAE519A241BC009EFFC4 /* CoreGraphics.framework */; };
+		D4DFFAE819A241BC009EFFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFAE719A241BC009EFFC4 /* UIKit.framework */; };
+		D4DFFAEE19A241BC009EFFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4DFFAEC19A241BC009EFFC4 /* InfoPlist.strings */; };
+		D4DFFAF019A241BC009EFFC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFFAEF19A241BC009EFFC4 /* main.m */; };
+		D4DFFAF419A241BC009EFFC4 /* KIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFFAF319A241BC009EFFC4 /* KIAppDelegate.m */; };
+		D4DFFAF719A241BC009EFFC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DFFAF519A241BC009EFFC4 /* Main.storyboard */; };
+		D4DFFAFA19A241BC009EFFC4 /* KIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFFAF919A241BC009EFFC4 /* KIViewController.m */; };
+		D4DFFAFC19A241BC009EFFC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4DFFAFB19A241BC009EFFC4 /* Images.xcassets */; };
+		D4DFFB0319A241BC009EFFC4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFB0219A241BC009EFFC4 /* XCTest.framework */; };
+		D4DFFB0419A241BC009EFFC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFAE319A241BC009EFFC4 /* Foundation.framework */; };
+		D4DFFB0519A241BC009EFFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFAE719A241BC009EFFC4 /* UIKit.framework */; };
+		D4DFFB0D19A241BC009EFFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4DFFB0B19A241BC009EFFC4 /* InfoPlist.strings */; };
+		D4DFFB0F19A241BC009EFFC4 /* ChameleonViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFFB0E19A241BC009EFFC4 /* ChameleonViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4DFFB0619A241BC009EFFC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4DFFAD819A241BB009EFFC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4DFFADF19A241BC009EFFC4;
+			remoteInfo = ChameleonView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4DFFAE019A241BC009EFFC4 /* ChameleonView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChameleonView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DFFAE319A241BC009EFFC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4DFFAE519A241BC009EFFC4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4DFFAE719A241BC009EFFC4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D4DFFAEB19A241BC009EFFC4 /* ChameleonView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChameleonView-Info.plist"; sourceTree = "<group>"; };
+		D4DFFAED19A241BC009EFFC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4DFFAEF19A241BC009EFFC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4DFFAF119A241BC009EFFC4 /* ChameleonView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChameleonView-Prefix.pch"; sourceTree = "<group>"; };
+		D4DFFAF219A241BC009EFFC4 /* KIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIAppDelegate.h; sourceTree = "<group>"; };
+		D4DFFAF319A241BC009EFFC4 /* KIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAppDelegate.m; sourceTree = "<group>"; };
+		D4DFFAF619A241BC009EFFC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4DFFAF819A241BC009EFFC4 /* KIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIViewController.h; sourceTree = "<group>"; };
+		D4DFFAF919A241BC009EFFC4 /* KIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIViewController.m; sourceTree = "<group>"; };
+		D4DFFAFB19A241BC009EFFC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4DFFB0119A241BC009EFFC4 /* ChameleonViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChameleonViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DFFB0219A241BC009EFFC4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4DFFB0A19A241BC009EFFC4 /* ChameleonViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChameleonViewTests-Info.plist"; sourceTree = "<group>"; };
+		D4DFFB0C19A241BC009EFFC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4DFFB0E19A241BC009EFFC4 /* ChameleonViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChameleonViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4DFFADD19A241BC009EFFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFFAE619A241BC009EFFC4 /* CoreGraphics.framework in Frameworks */,
+				D4DFFAE819A241BC009EFFC4 /* UIKit.framework in Frameworks */,
+				D4DFFAE419A241BC009EFFC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DFFAFE19A241BC009EFFC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFFB0319A241BC009EFFC4 /* XCTest.framework in Frameworks */,
+				D4DFFB0519A241BC009EFFC4 /* UIKit.framework in Frameworks */,
+				D4DFFB0419A241BC009EFFC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4DFFAD719A241BB009EFFC4 = {
+			isa = PBXGroup;
+			children = (
+				D4DFFAE919A241BC009EFFC4 /* ChameleonView */,
+				D4DFFB0819A241BC009EFFC4 /* ChameleonViewTests */,
+				D4DFFAE219A241BC009EFFC4 /* Frameworks */,
+				D4DFFAE119A241BC009EFFC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4DFFAE119A241BC009EFFC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFFAE019A241BC009EFFC4 /* ChameleonView.app */,
+				D4DFFB0119A241BC009EFFC4 /* ChameleonViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4DFFAE219A241BC009EFFC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFFAE319A241BC009EFFC4 /* Foundation.framework */,
+				D4DFFAE519A241BC009EFFC4 /* CoreGraphics.framework */,
+				D4DFFAE719A241BC009EFFC4 /* UIKit.framework */,
+				D4DFFB0219A241BC009EFFC4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4DFFAE919A241BC009EFFC4 /* ChameleonView */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFFAF219A241BC009EFFC4 /* KIAppDelegate.h */,
+				D4DFFAF319A241BC009EFFC4 /* KIAppDelegate.m */,
+				D4DFFAF519A241BC009EFFC4 /* Main.storyboard */,
+				D4DFFAF819A241BC009EFFC4 /* KIViewController.h */,
+				D4DFFAF919A241BC009EFFC4 /* KIViewController.m */,
+				D4DFFAFB19A241BC009EFFC4 /* Images.xcassets */,
+				D4DFFAEA19A241BC009EFFC4 /* Supporting Files */,
+			);
+			path = ChameleonView;
+			sourceTree = "<group>";
+		};
+		D4DFFAEA19A241BC009EFFC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFFAEB19A241BC009EFFC4 /* ChameleonView-Info.plist */,
+				D4DFFAEC19A241BC009EFFC4 /* InfoPlist.strings */,
+				D4DFFAEF19A241BC009EFFC4 /* main.m */,
+				D4DFFAF119A241BC009EFFC4 /* ChameleonView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4DFFB0819A241BC009EFFC4 /* ChameleonViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFFB0E19A241BC009EFFC4 /* ChameleonViewTests.m */,
+				D4DFFB0919A241BC009EFFC4 /* Supporting Files */,
+			);
+			path = ChameleonViewTests;
+			sourceTree = "<group>";
+		};
+		D4DFFB0919A241BC009EFFC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4DFFB0A19A241BC009EFFC4 /* ChameleonViewTests-Info.plist */,
+				D4DFFB0B19A241BC009EFFC4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4DFFADF19A241BC009EFFC4 /* ChameleonView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4DFFB1219A241BC009EFFC4 /* Build configuration list for PBXNativeTarget "ChameleonView" */;
+			buildPhases = (
+				D4DFFADC19A241BC009EFFC4 /* Sources */,
+				D4DFFADD19A241BC009EFFC4 /* Frameworks */,
+				D4DFFADE19A241BC009EFFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChameleonView;
+			productName = ChameleonView;
+			productReference = D4DFFAE019A241BC009EFFC4 /* ChameleonView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4DFFB0019A241BC009EFFC4 /* ChameleonViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4DFFB1519A241BC009EFFC4 /* Build configuration list for PBXNativeTarget "ChameleonViewTests" */;
+			buildPhases = (
+				D4DFFAFD19A241BC009EFFC4 /* Sources */,
+				D4DFFAFE19A241BC009EFFC4 /* Frameworks */,
+				D4DFFAFF19A241BC009EFFC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4DFFB0719A241BC009EFFC4 /* PBXTargetDependency */,
+			);
+			name = ChameleonViewTests;
+			productName = ChameleonViewTests;
+			productReference = D4DFFB0119A241BC009EFFC4 /* ChameleonViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4DFFAD819A241BB009EFFC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = kaiinui;
+				TargetAttributes = {
+					D4DFFB0019A241BC009EFFC4 = {
+						TestTargetID = D4DFFADF19A241BC009EFFC4;
+					};
+				};
+			};
+			buildConfigurationList = D4DFFADB19A241BB009EFFC4 /* Build configuration list for PBXProject "ChameleonView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4DFFAD719A241BB009EFFC4;
+			productRefGroup = D4DFFAE119A241BC009EFFC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4DFFADF19A241BC009EFFC4 /* ChameleonView */,
+				D4DFFB0019A241BC009EFFC4 /* ChameleonViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4DFFADE19A241BC009EFFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFFAFC19A241BC009EFFC4 /* Images.xcassets in Resources */,
+				D4DFFAEE19A241BC009EFFC4 /* InfoPlist.strings in Resources */,
+				D4DFFAF719A241BC009EFFC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DFFAFF19A241BC009EFFC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFFB0D19A241BC009EFFC4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4DFFADC19A241BC009EFFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFFAFA19A241BC009EFFC4 /* KIViewController.m in Sources */,
+				D4DFFAF419A241BC009EFFC4 /* KIAppDelegate.m in Sources */,
+				D4DFFAF019A241BC009EFFC4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DFFAFD19A241BC009EFFC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DFFB0F19A241BC009EFFC4 /* ChameleonViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4DFFB0719A241BC009EFFC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4DFFADF19A241BC009EFFC4 /* ChameleonView */;
+			targetProxy = D4DFFB0619A241BC009EFFC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4DFFAEC19A241BC009EFFC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4DFFAED19A241BC009EFFC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4DFFAF519A241BC009EFFC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4DFFAF619A241BC009EFFC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4DFFB0B19A241BC009EFFC4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4DFFB0C19A241BC009EFFC4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4DFFB1019A241BC009EFFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4DFFB1119A241BC009EFFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4DFFB1319A241BC009EFFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChameleonView/ChameleonView-Prefix.pch";
+				INFOPLIST_FILE = "ChameleonView/ChameleonView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4DFFB1419A241BC009EFFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChameleonView/ChameleonView-Prefix.pch";
+				INFOPLIST_FILE = "ChameleonView/ChameleonView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4DFFB1619A241BC009EFFC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChameleonView.app/ChameleonView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChameleonView/ChameleonView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChameleonViewTests/ChameleonViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4DFFB1719A241BC009EFFC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChameleonView.app/ChameleonView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChameleonView/ChameleonView-Prefix.pch";
+				INFOPLIST_FILE = "ChameleonViewTests/ChameleonViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4DFFADB19A241BB009EFFC4 /* Build configuration list for PBXProject "ChameleonView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DFFB1019A241BC009EFFC4 /* Debug */,
+				D4DFFB1119A241BC009EFFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4DFFB1219A241BC009EFFC4 /* Build configuration list for PBXNativeTarget "ChameleonView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DFFB1319A241BC009EFFC4 /* Debug */,
+				D4DFFB1419A241BC009EFFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4DFFB1519A241BC009EFFC4 /* Build configuration list for PBXNativeTarget "ChameleonViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DFFB1619A241BC009EFFC4 /* Debug */,
+				D4DFFB1719A241BC009EFFC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4DFFAD819A241BB009EFFC4 /* Project object */;
+}
