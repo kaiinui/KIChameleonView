@@ -1,17 +1,10 @@
-//
-//  KIChameleonView.m
-//  ChameleonView
-//
-//  Created by kaiinui on 2014/08/18.
-//  Copyright (c) 2014年 kaiinui. All rights reserved.
-//
-
 #import "KIChameleonView.h"
-
+#import <UIImageView+WebCache.h>
+#import <VKVideoPlayer.h>
+#import <FLAnimatedImage.h>
+#import <FLAnimatedImageView.h>
 
 @interface KIChameleonView ()
-
-@property (nonatomic, strong) NSURL *url;
 
 @end
 
@@ -30,6 +23,10 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
         // Initialization code
     }
     return self;
+}
+
+- (void)viewDidLoad {
+    
 }
 
 - (void)setURL:(NSURL *)URL {
@@ -51,7 +48,9 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
 # pragma mark - Private Methods
 
 - (void)setImageViewWithURL:(NSURL *)URL {
-    // [TODO]
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.frame];
+    [self addSubview:imageView];
+    [imageView sd_setImageWithURL:URL];
 }
 
 - (void)setAnimationGIFViewWithURL:(NSURL *)URL {
