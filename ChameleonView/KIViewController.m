@@ -21,8 +21,12 @@
     
     KIChameleonView *view = [[KIChameleonView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     [self.view addSubview:view];
-    [view setURL:[NSURL URLWithString:@"http://raphaelschaad.com/static/nyan.gif"]];
+    [view setURL:[NSURL URLWithString:@"http://content.viki.com/test_ios/ios_240.m3u8"]];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    // PNG: http://d37rcl8t6g8sj5.cloudfront.net/wp-content/uploads/chain2.png
+    // AniGIF: http://raphaelschaad.com/static/nyan.gif
+    // HLS: http://content.viki.com/test_ios/ios_240.m3u8
 }
 
 - (void)didReceiveMemoryWarning

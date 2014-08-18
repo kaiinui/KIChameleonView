@@ -45,20 +45,25 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
 # pragma mark - Private Methods
 
 - (void)setImageViewWithURL:(NSURL *)URL {
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.frame];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
     [self addSubview:imageView];
     [imageView sd_setImageWithURL:URL];
 }
 
 - (void)setAnimationGIFViewWithURL:(NSURL *)URL {
     FLAnimatedImage *image = [[FLAnimatedImage alloc] initWithAnimatedGIFData:[NSData dataWithContentsOfURL:URL]];
-    FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] initWithFrame:self.frame];
+    FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] initWithFrame:self.bounds];
     [self addSubview:imageView];
     imageView.animatedImage = image;
 }
 
 - (void)setVideoPlayerViewWithURL:(NSURL *)URL {
-    // [TODO]
+    VKVideoPlayerView *playerView = [[VKVideoPlayerView alloc] initWithFrame:self.bounds];
+    VKVideoPlayer *player = [[VKVideoPlayer alloc] initWithVideoPlayerView:playerView];
+    player.delegate = self;
+    VKVideoPlayerTrack *track = [[VKVideoPlayerTrack alloc] initWithStreamURL:URL];
+    [player loadVideoWithTrack:track];
+    [self addSubview:playerView];
 }
 
 - (KIChameleonViewType)typeForURL:(NSURL *)URL {
@@ -80,6 +85,13 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
              @"webp": @(KIChameleonViewTypeImage),
              @"m3u8": @(KIChameleonViewTypeVideo)
              };
+}
+
+# pragma mark - VKVideoPlayerDelegate
+
+- (void)videoPlayer:(VKVideoPlayer *)videoPlayer didControlByEvent:(VKVideoPlayerControlEvent)event {
+    if (event == VKVideoPlayerControlEventTapDone) {
+    }
 }
 
 /*

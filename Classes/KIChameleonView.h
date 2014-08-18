@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
+#import <VKVideoPlayer.h>
 
-@interface KIChameleonView : UIView
+@interface KIChameleonView : UIView <VKVideoPlayerDelegate>
 
 - (void)setURL:(NSURL *)URL;
 
