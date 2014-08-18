@@ -22,6 +22,7 @@
 		D4DFFB0519A241BC009EFFC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DFFAE719A241BC009EFFC4 /* UIKit.framework */; };
 		D4DFFB0D19A241BC009EFFC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4DFFB0B19A241BC009EFFC4 /* InfoPlist.strings */; };
 		D4DFFB0F19A241BC009EFFC4 /* ChameleonViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFFB0E19A241BC009EFFC4 /* ChameleonViewTests.m */; };
+		D4DFFB1B19A242A9009EFFC4 /* KIChameleonView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DFFB1A19A242A9009EFFC4 /* KIChameleonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		D4DFFB0A19A241BC009EFFC4 /* ChameleonViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChameleonViewTests-Info.plist"; sourceTree = "<group>"; };
 		D4DFFB0C19A241BC009EFFC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4DFFB0E19A241BC009EFFC4 /* ChameleonViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChameleonViewTests.m; sourceTree = "<group>"; };
+		D4DFFB1919A242A9009EFFC4 /* KIChameleonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIChameleonView.h; sourceTree = "<group>"; };
+		D4DFFB1A19A242A9009EFFC4 /* KIChameleonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIChameleonView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 		D4DFFB1819A2427E009EFFC4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D4DFFB1919A242A9009EFFC4 /* KIChameleonView.h */,
+				D4DFFB1A19A242A9009EFFC4 /* KIChameleonView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				D4DFFAFA19A241BC009EFFC4 /* KIViewController.m in Sources */,
 				D4DFFAF419A241BC009EFFC4 /* KIAppDelegate.m in Sources */,
 				D4DFFAF019A241BC009EFFC4 /* main.m in Sources */,
+				D4DFFB1B19A242A9009EFFC4 /* KIChameleonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
