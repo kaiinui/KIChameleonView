@@ -2,4 +2,6 @@
 
 @interface KIChameleonView : UIView
 
+- (void)setURL:(NSURL *)URL;
+
 @end

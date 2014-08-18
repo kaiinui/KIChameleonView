@@ -25,10 +25,6 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
     return self;
 }
 
-- (void)viewDidLoad {
-    
-}
-
 - (void)setURL:(NSURL *)URL {
     switch ([self typeForURL:URL]) {
         case KIChameleonViewTypeImage:
@@ -41,6 +37,7 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
             [self setVideoPlayerViewWithURL:URL];
             break;
         default:
+            NSLog(@"DEFAULT");
             break;
     }
 }
@@ -70,7 +67,7 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
 }
 
 - (KIChameleonViewType)typeForExtension:(NSString *)extension {
-    return [self extensionToViewMapping][extension];
+    return [[self extensionToViewMapping][extension] integerValue];
 }
 
 - (NSDictionary *)extensionToViewMapping {

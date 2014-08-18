@@ -7,6 +7,7 @@
 //
 
 #import "KIViewController.h"
+#import "../Classes/KIChameleonView.h"
 
 @interface KIViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    KIChameleonView *view = [[KIChameleonView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [self.view addSubview:view];
+    [view setURL:[NSURL URLWithString:@"http://raphaelschaad.com/static/nyan.gif"]];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
