@@ -7,7 +7,7 @@
 //
 
 #import "KIViewController.h"
-#import "../Classes/KIChameleonView.h"
+#import "Classes/KIChameleonView.h"
 
 @interface KIViewController ()
 
