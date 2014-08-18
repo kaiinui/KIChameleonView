@@ -99,20 +99,4 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
              };
 }
 
-# pragma mark - VKVideoPlayerDelegate
-
-- (void)videoPlayer:(VKVideoPlayer *)videoPlayer didControlByEvent:(VKVideoPlayerControlEvent)event {
-    if (event == VKVideoPlayerControlEventTapDone) {
-    }
-}
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
 @end
