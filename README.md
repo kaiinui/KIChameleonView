@@ -27,4 +27,4 @@ NSURL *url = [NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/7817937/
 [chameleonView setURL:url];
 ```
 
-![](https://dl.dropboxusercontent.com/u/7817937/photo1.200x.raw.webp)
+![](https://dl.dropboxusercontent.com/u/7817937/nameko.jpg)
