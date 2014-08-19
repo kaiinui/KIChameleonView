@@ -10,12 +10,6 @@
 
 @implementation KIChameleonView
 
-typedef NS_ENUM(NSInteger, KIChameleonViewType) {
-    KIChameleonViewTypeImage,
-    KIChameleonViewTypeAniGif,
-    KIChameleonViewTypeVideo
-};
-
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -26,7 +20,11 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
 }
 
 - (void)setURL:(NSURL *)URL {
-    switch ([self typeForURL:URL]) {
+    [self setURL:URL withType:[self typeForURL:URL]];
+}
+
+- (void)setURL:(NSURL *)URL withType:(KIChameleonViewType)type {
+    switch (type) {
         case KIChameleonViewTypeImage:
             [self setImageViewWithURL:URL];
             break;
