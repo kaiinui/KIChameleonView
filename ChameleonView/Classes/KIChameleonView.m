@@ -3,7 +3,6 @@
 #import <VKVideoPlayer.h>
 #import <FLAnimatedImage.h>
 #import <FLAnimatedImageView.h>
-#import <UIImage+WebP.h>
 
 @interface KIChameleonView ()
 
@@ -14,8 +13,7 @@
 typedef NS_ENUM(NSInteger, KIChameleonViewType) {
     KIChameleonViewTypeImage,
     KIChameleonViewTypeAniGif,
-    KIChameleonViewTypeVideo,
-    KIChameleonViewTypeWebP
+    KIChameleonViewTypeVideo
 };
 
 - (id)initWithFrame:(CGRect)frame
@@ -38,11 +36,8 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
         case KIChameleonViewTypeVideo:
             [self setVideoPlayerViewWithURL:URL];
             break;
-        case KIChameleonViewTypeWebP:
-            [self setWebPImageViewWithURL:URL];
-            break;
         default:
-            NSLog(@"DEFAULT");
+            NSLog(@"DEFAULT"); // TODO Show "Unknown Extension! Error."
             break;
     }
 }
@@ -65,17 +60,9 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
 - (void)setVideoPlayerViewWithURL:(NSURL *)URL {
     VKVideoPlayerView *playerView = [[VKVideoPlayerView alloc] initWithFrame:self.bounds];
     VKVideoPlayer *player = [[VKVideoPlayer alloc] initWithVideoPlayerView:playerView];
-    player.delegate = self;
     VKVideoPlayerTrack *track = [[VKVideoPlayerTrack alloc] initWithStreamURL:URL];
     [player loadVideoWithTrack:track];
     [self addSubview:playerView];
-}
-
-- (void)setWebPImageViewWithURL:(NSURL *)URL {
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
-    [self addSubview:imageView];
-    NSData *data = [NSData dataWithContentsOfURL:URL];
-    [imageView setImage:[UIImage sd_imageWithWebPData:data]];
 }
 
 - (KIChameleonViewType)typeForURL:(NSURL *)URL {
@@ -94,7 +81,7 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
              @"jpeg": @(KIChameleonViewTypeImage),
              @"bmp": @(KIChameleonViewTypeImage),
              @"png": @(KIChameleonViewTypeImage),
-             @"webp": @(KIChameleonViewTypeWebP),
+             @"webp": @(KIChameleonViewTypeImage),
              @"m3u8": @(KIChameleonViewTypeVideo)
              };
 }
