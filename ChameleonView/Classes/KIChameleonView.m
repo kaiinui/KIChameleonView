@@ -45,6 +45,7 @@
 - (void)setImageViewWithURL:(NSURL *)URL {
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
     [self addSubview:imageView];
+    [imageView setContentMode:UIViewContentModeScaleAspectFit];
     [imageView sd_setImageWithURL:URL];
 }
 
@@ -53,6 +54,7 @@
     FLAnimatedImageView *imageView = [[FLAnimatedImageView alloc] initWithFrame:self.bounds];
     [self addSubview:imageView];
     imageView.animatedImage = image;
+    [imageView setContentMode:UIViewContentModeScaleAspectFit];
 }
 
 - (void)setVideoPlayerViewWithURL:(NSURL *)URL {

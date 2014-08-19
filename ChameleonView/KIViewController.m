@@ -19,9 +19,9 @@
 {
     [super viewDidLoad];
     
-    KIChameleonView *view = [[KIChameleonView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    KIChameleonView *view = [[KIChameleonView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:view];
-    [view setURL:[NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/7817937/photo1.200x.raw.webp"]];
+    [view setURL:[NSURL URLWithString:@"http://d37rcl8t6g8sj5.cloudfront.net/wp-content/uploads/chain2.png"]];
 	// Do any additional setup after loading the view, typically from a nib.
     
     // PNG: http://d37rcl8t6g8sj5.cloudfront.net/wp-content/uploads/chain2.png
