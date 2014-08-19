@@ -1,6 +1,8 @@
 KIChameleonView
 ===============
 
+![](http://img.shields.io/cocoapods/v/KIChameleonView.svg?style=flat)
+
 AniGIF
 ---
 
@@ -40,6 +42,22 @@ NSURL *url = [NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/7817937/
 ```
 
 ![](https://dl.dropboxusercontent.com/u/7817937/nameko.jpg)
+
+Dependencies
+---
+
+- `SDWebImage`
+- `FLAnimatedImage`
+- `VKVideoPlayer`
+
+Installation
+---
+
+`pod 'KIChameleonView'`
+
+and just `[chameleonView setURL:someURL];`!
+
+:sushi:
 
 LICENSE
 ---
