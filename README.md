@@ -27,11 +27,11 @@ Image
 ---
 
 ```objc
-NSURL *url = [NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/7817937/nameko.jpg"];
+NSURL *url = [NSURL URLWithString:@"https://dl.dropboxusercontent.com/u/7817937/_github/ChameleonView.jpg"];
 [chemeleonView setURL:url];
 ```
 
-![](https://dl.dropboxusercontent.com/u/7817937/nameko.jpg)
+![](https://dl.dropboxusercontent.com/u/7817937/_github/ChameleonView.jpg)
 
 WebP (currently not supported due to libwebp sourcecode footprint)
 ---
