@@ -5,11 +5,11 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/kaiinui/KIChameleonView"
   s.license      = "MIT"
   s.author       = { "kaiinui" => "lied.der.optik@gmail.com" }
-  s.source       = { :git => "https://github.com/kaiinui/KIChameleonView.git", :tag => "2.0" }
+  s.source       = { :git => "https://github.com/kaiinui/KIChameleonView.git", :tag => "0.2.0" }
   s.source_files  = "ChameleonView/Classes/**/*.{h,m}"
   s.requires_arc = true
   s.platform = "ios", '7.0'
-  s.dependency "SDWebImage
+  s.dependency "SDWebImage"
   s.dependency "VKVideoPlayer"
   s.dependency "FLAnimatedImage"
 end
