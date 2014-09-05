@@ -3,6 +3,7 @@
 #import <VKVideoPlayer.h>
 #import <FLAnimatedImage.h>
 #import <FLAnimatedImageView.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface KIChameleonView ()
 
@@ -33,6 +34,9 @@
             break;
         case KIChameleonViewTypeVideo:
             [self setVideoPlayerViewWithURL:URL];
+            break;
+        case KIChameleonViewTypeAsset:
+            [self setAssetImageViewWithURL:URL];
             break;
         default:
             NSLog(@"DEFAULT"); // TODO Show "Unknown Extension! Error."
@@ -73,16 +77,33 @@
     [self addSubview:playerView];
 }
 
+- (void)setAssetImageViewWithURL:(NSURL *)URL {
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+    [imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [self addSubview:imageView];
+    
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    [library assetForURL:URL resultBlock:^(ALAsset *asset) {
+        CGImageRef imageRef = [[asset defaultRepresentation] fullScreenImage];
+        UIImage *image = [UIImage imageWithCGImage:imageRef];
+        imageView.image = image;
+    } failureBlock:^(NSError *error) {
+        NSLog(@"Could not find asset %@.", URL);
+    }];
+}
+
 - (KIChameleonViewType)typeForURL:(NSURL *)URL {
+    NSString *scheme = [URL scheme];
+    if ([scheme isEqualToString:@"assets-library"]) {return KIChameleonViewTypeAsset;}
     NSString *extension = [[URL path] pathExtension];
     return [self typeForExtension:extension];
 }
 
 - (KIChameleonViewType)typeForExtension:(NSString *)extension {
-    return [[self extensionToViewMapping][extension] integerValue];
+    return [[[self class] extensionToViewMapping][extension] integerValue];
 }
 
-- (NSDictionary *)extensionToViewMapping {
++ (NSDictionary *)extensionToViewMapping {
     return @{
              @"gif": @(KIChameleonViewTypeAniGif),
              @"jpg": @(KIChameleonViewTypeImage),
