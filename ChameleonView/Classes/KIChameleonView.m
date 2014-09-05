@@ -19,11 +19,11 @@
     return self;
 }
 
-- (void)setURL:(NSURL *)URL {
-    [self setURL:URL withType:[self typeForURL:URL]];
+- (void)setImageWithURL:(NSURL *)URL {
+    [self setImageWithURL:URL withType:[self typeForURL:URL]];
 }
 
-- (void)setURL:(NSURL *)URL withType:(KIChameleonViewType)type {
+- (void)setImageWithURL:(NSURL *)URL withType:(KIChameleonViewType)type {
     switch (type) {
         case KIChameleonViewTypeImage:
             [self setImageViewWithURL:URL];
@@ -38,6 +38,14 @@
             NSLog(@"DEFAULT"); // TODO Show "Unknown Extension! Error."
             break;
     }
+}
+
+- (void)setURL:(NSURL *)URL {
+    [self setImageWithURL:URL];
+}
+
+- (void)setURL:(NSURL *)URL withType:(KIChameleonViewType)type {
+    [self setImageWithURL:URL withType:type];
 }
 
 # pragma mark - Private Methods
