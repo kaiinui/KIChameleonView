@@ -3,6 +3,8 @@ KIChameleonView
 
 ![](http://img.shields.io/cocoapods/v/KIChameleonView.svg?style=flat)
 
+Once you set a URL, the view will be appropriate media, as following.
+
 AniGIF
 ---
 
