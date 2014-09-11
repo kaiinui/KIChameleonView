@@ -1,4 +1,4 @@
-KIChameleonView
+![KIChameleonView](https://dl.dropboxusercontent.com/u/7817937/_github/KIChameleonViewLogo.png)
 ===============
 
 ![](http://img.shields.io/cocoapods/v/KIChameleonView.svg?style=flat)
