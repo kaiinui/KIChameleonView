@@ -67,7 +67,7 @@ Installation
 
 `pod 'KIChameleonView'`
 
-and just `[chameleonView setURL:someURL];`!
+and just `[chameleonView setImageWithURL:someURL];`!
 
 :sushi:
 
