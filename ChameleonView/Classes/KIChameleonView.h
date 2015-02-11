@@ -17,6 +17,10 @@ typedef NS_ENUM(NSInteger, KIChameleonViewType) {
 - (void)setImageWithURL:(NSURL *)URL;
 - (void)setImageWithURL:(NSURL *)URL withType:(KIChameleonViewType)type;
 
+- (void)setPlaceholderImage:(UIImage *)placeholderImage;
+- (void)setImageViewWithURL:(NSURL *)URL placeholderImage:(UIImage *)placeholderImage
+             andContentMode:(UIViewContentMode)contentMode;
+
 - (void)setURL:(NSURL *)URL __deprecated;
 - (void)setURL:(NSURL *)URL withType:(KIChameleonViewType)type __deprecated;
 

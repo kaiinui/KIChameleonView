@@ -20,6 +20,12 @@
     return self;
 }
 
+- (void)setPlaceholderImage:(UIImage *)placeholderImage {
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+    [self addSubview:imageView];
+    imageView.image = placeholderImage;
+}
+
 - (void)setImageWithURL:(NSURL *)URL {
     [self setImageWithURL:URL withType:[self typeForURL:URL]];
 }
@@ -59,6 +65,15 @@
     [self addSubview:imageView];
     [imageView setContentMode:UIViewContentModeScaleAspectFit];
     [imageView sd_setImageWithURL:URL];
+}
+
+- (void)setImageViewWithURL:(NSURL *)URL placeholderImage:(UIImage *)placeholderImage andContentMode:(UIViewContentMode)contentMode {
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+    [self addSubview:imageView];
+    
+    [imageView sd_setImageWithURL:URL placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        [imageView setContentMode:contentMode];
+    }];
 }
 
 - (void)setAnimationGIFViewWithURL:(NSURL *)URL {
